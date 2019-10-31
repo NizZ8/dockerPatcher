@@ -39,6 +39,8 @@ $+12             | 48 8B 4D A8             | mov rcx,qword ptr ss:[rbp-58]      
 #define check_integrity_offset (0x25C79)
 #define patch_offset (check_integrity_offset + 4)
 /*
+original bytes:
+
 static const char check_integrity_bytes[] = {
 	'\x45', '\x33', '\xC0', '\xBA', '\x76', '\x03', '\x00', '\x00',
 	'\x48', '\x8B', '\x4D', '\xA8', '\xE8', '\x22', '\x99', '\x02',
