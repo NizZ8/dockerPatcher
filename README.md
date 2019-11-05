@@ -12,3 +12,6 @@ This happens on some 1903 machines, and not at all on others - I have not been a
 After a Windows update the vmcompute.dll binary minorly changed which is why the code this patcher uses is slightly different from the original solution posted by giniyat202
 
 I automate this patcher in my team's development environment automation solution, if the issue hits someone's machine they can run the patcher and it will build images as needed - this only needs to be used for building images, once the images are built Docker or the machine can be restarted without causing the issue to resurface.
+
+* Call it like this after building (from powershell): patchDocker.exe p (ps dockerd).id
+
